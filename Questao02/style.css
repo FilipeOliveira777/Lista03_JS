@@ -1,0 +1,12 @@
+body{
+    display: inline-block;
+}
+form {
+margin-bottom: 20px;
+}
+.cliente {
+        border: 1px solid #000000;
+        background-color: aliceblue;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
