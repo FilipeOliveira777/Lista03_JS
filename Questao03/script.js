@@ -1,7 +1,7 @@
 class Transacao {
     constructor(descricao, valor) {
         this.descricao = descricao;
-        this.valor = parseFloat(valor);
+        this.valor = Number(valor);
     }
 }
 const tabelatransacao = document.getElementById('tabelatransacao');
@@ -14,6 +14,7 @@ formulario.addEventListener('submit', (event)=> {
     
     const descricao = document.getElementById('descricao').value;
     const valor = document.getElementById('valor').value;
+    console.log(typeof valor);
     const transacao = new Transacao(descricao, valor);
     adicionarTransacao(transacao);
     event.target.reset();
